@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Рабочая директория</title>
+</head>
+<body>
+    <h1>Выберите раздел</h1>
+    {% for title, url in pages.items %}
+        <a href="{{ url }}">{{ title }}</a>
+        <br>
+    {% endfor %}
+    <h2>Содержимое рабочей директории</h2>
+    {% for item in dir_list %}
+        <h3>{{ item }}</h3>
+    {% endfor %}
+</body>
+</html>
